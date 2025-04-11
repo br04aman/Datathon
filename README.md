@@ -1,82 +1,96 @@
-# Global Humanitarian Dashboard
+# 🌍 Global Humanitarian Dashboard
 
-A modern, interactive dashboard that visualizes and analyzes global humanitarian data including modern slavery, migration patterns, and refugee statistics.
+An interactive web dashboard that visualizes and analyzes global humanitarian issues including **modern slavery**, **migration patterns**, and **refugee statistics**—designed to inform, engage, and drive awareness.
 
-## Features
+---
 
-- Modern Slavery Analysis
-  - Prevalence map by country
-  - Regional distribution of modern slavery
-  - Top affected countries
+## 🚀 Key Features
 
-- Migration Patterns
-  - Net migration trends over time
-  - Population vs. migration correlation
-  - Migration distribution by country
+### 📌 Modern Slavery Analysis
+- Interactive world map showing slavery prevalence by country
+- Regional breakdown and statistics
+- Top countries with highest modern slavery rates
 
-- Refugee Statistics
-  - Global refugee trends
-  - Interactive refugee distribution map
-  - Top refugee hosting countries
+### 🌐 Migration Insights
+- Net migration trends visualized over time
+- Analysis of population vs. migration relationships
+- Country-wise migration patterns
 
-## Script Descriptions
+### 🏠 Refugee Statistics
+- Trends in global refugee movements
+- Interactive maps for refugee distribution
+- Highlighting top refugee-hosting nations
 
-- **Global_slavery_index.py**: Analyzes global slavery data, visualizing the prevalence and distribution of modern slavery.
-- **Refugee_Analysis.py**: Analyzes refugee data, visualizing trends and statistics related to refugees.
-- **Migration_World_Bank_Report.py**: Analyzes migration data, visualizing population growth and migration trends.
+---
 
-## Setup Instructions
+## 🧠 Script Overview
 
-1. Create a virtual environment (recommended):
+| Script File | Description |
+|-------------|-------------|
+| `Global_slavery_index.py` | Loads and visualizes modern slavery data globally |
+| `Refugee_Analysis.py` | Analyzes and displays trends in refugee data |
+| `Migration_World_Bank_Report.py` | Explores global migration trends from World Bank data |
+
+---
+
+## ⚙️ Getting Started
+
+Follow these simple steps to run the dashboard locally:
+
+### 1. Set up a virtual environment (recommended)
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-2. Install required packages:
+### 2. Install required dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the application:
+### 3. Launch the app
 ```bash
 python app.py
 ```
 
-4. Open your web browser and navigate to:
+### 4. View it in your browser
+Open [http://localhost:5000](http://localhost:5000) in your browser to interact with the dashboard.
+
+---
+
+## 📊 Data Sources
+
+- [Global Slavery Index 2023](https://www.walkfree.org/global-slavery-index/)
+- [World Bank Migration Data](https://data.worldbank.org/indicator)
+- [UNHCR Refugee Statistics](https://www.unhcr.org/statistics/)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend**: Flask, Dash
+- **Data Analysis & Visualization**: Pandas, Plotly
+- **Frontend**: Bootstrap, Custom CSS
+
+---
+
+## 📁 Project Structure
+
 ```
-http://localhost:5000
-```
-
-## Data Sources
-
-- Global Slavery Index 2023
-- World Bank Migration Data
-- UNHCR Refugee Statistics
-
-## Technologies Used
-
-- Flask
-- Dash
-- Plotly
-- Pandas
-- Bootstrap
-- Custom CSS
-
-## Project Structure
-
-```
-├── app.py                 # Main application file
-├── requirements.txt       # Python dependencies
+├── app.py                      # Main dashboard app
+├── requirements.txt            # Python dependencies
 ├── static/
 │   └── css/
-│       └── style.css     # Custom styling
+│       └── style.css           # Custom styles
 └── data/
     ├── Global_Slavery_Index_2023.csv
     ├── pop_and_net_migration.csv
     └── United_Nations_Refugee_Data.csv
 ```
 
-## Contributing
+---
 
-Feel free to submit issues and enhancement requests!
+## 🤝 Contributing
+
+Have suggestions, spotted bugs, or want to contribute new features?  
+You're welcome! Please open an [issue](https://github.com/your-repo/issues) or submit a pull request.
