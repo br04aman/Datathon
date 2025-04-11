@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Analysis - Global Humanitarian Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1519817650390-64a93db51149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            margin-bottom: 40px;
+        }
+        .navbar {
+            background-color: #343a40 !important;
+        }
+        .card {
+            background-color: #2c2c2c;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        footer {
+            margin-top: 60px;
+            padding: 20px 0;
+            background-color: #212529;
+        }
+        .dashboard-container {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .badge-danger {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Global Humanitarian Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dash/">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/war-analysis.html">War Analysis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">War Analysis Dashboard</h1>
+            <p class="lead">Examining the humanitarian impact of armed conflicts worldwide</p>
+            <span class="badge bg-danger py-2 px-3">SPECIAL ANALYSIS</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Interactive War Analysis Dashboard</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>This interactive dashboard visualizes the humanitarian impact of armed conflicts, including refugee flows, civilian casualties, and humanitarian aid allocation. Use the filters and interactive elements to explore different aspects of the data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="dashboard-container">
+                    <!-- Power BI Embed Code -->
+                    <iframe 
+                        width="100%" 
+                        height="800" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMjk3MjY1NDMtYjBjMi00Y2YxLTkxNjAtMmUzODI3NzVjOGYyIiwidCI6IjBmOWUzNWRiLTU0NGYtNGY2MC1iZGNjLTVlYTQxNmU2ZGM3MCIsImMiOjh9&pageName=ReportSectiona6258af90d41da03a35a" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>About This Analysis</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>This dashboard brings together data from multiple conflict zones around the world to provide a comprehensive view of how armed conflicts impact civilian populations. The analysis focuses on:</p>
+                        
+                        <ul>
+                            <li>Patterns of displacement and refugee flows from conflict zones</li>
+                            <li>Civilian versus military casualties across different regions</li>
+                            <li>Distribution and effectiveness of humanitarian aid in conflict-affected areas</li>
+                            <li>Historical trends in conflicts and their humanitarian outcomes</li>
+                            <li>Correlation between conflict intensity and population displacement</li>
+                        </ul>
+                        
+                        <p>The data is sourced from authoritative organizations including:</p>
+                        <ul>
+                            <li>UN Office for the Coordination of Humanitarian Affairs (OCHA)</li>
+                            <li>Uppsala Conflict Data Program (UCDP)</li>
+                            <li>Armed Conflict Location & Event Data Project (ACLED)</li>
+                            <li>Internal Displacement Monitoring Centre (IDMC)</li>
+                        </ul>
+                        
+                        <p>This analysis is updated quarterly to reflect the most current available data from these sources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Related Analyses</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Explore our other humanitarian data analyses:</p>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <a href="/dash/" class="btn btn-primary w-100">Refugee Analysis</a>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <a href="/dash/" class="btn btn-primary w-100">Migration Trends</a>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <a href="/dash/" class="btn btn-primary w-100">Slavery Index</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-muted">
+        <div class="container">
+            <p>Data sourced from UN OCHA, Uppsala Conflict Data Program, and ACLED</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask
+requests  # Added for API calls
+pandas
+plotly
+dash
+dash-bootstrap-components

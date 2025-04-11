@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Humanitarian Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            background-color: #2c2c2c;
+            border: none;
+            border-radius: 10px;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .btn-primary {
+            background-color: #0d6efd;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+        }
+        .navbar {
+            background-color: #343a40 !important;
+        }
+        .card-header {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        footer {
+            margin-top: 60px;
+            padding: 20px 0;
+            background-color: #212529;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Global Humanitarian Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dash/">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/war-analysis.html">War Analysis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">Global Humanitarian Dashboard</h1>
+            <p class="lead">Visualizing critical humanitarian data for a better understanding of global issues</p>
+            <a href="/dash/" class="btn btn-primary btn-lg mt-3">Go to Dashboard</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-header text-center">
+                        <h3>Refugee Analysis</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Explore global refugee statistics, track changes over time, and understand the distribution of refugees across different countries.</p>
+                    </div>
+                    <div class="card-footer text-center bg-transparent border-0">
+                        <a href="/dash/" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-header text-center">
+                        <h3>Migration Trends</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Analyze global migration patterns, population changes, and the relationship between migration and demographic factors.</p>
+                    </div>
+                    <div class="card-footer text-center bg-transparent border-0">
+                        <a href="/dash/" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-header text-center">
+                        <h3>Slavery Index</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Discover the prevalence and distribution of modern slavery across regions and countries with interactive visualizations.</p>
+                    </div>
+                    <div class="card-footer text-center bg-transparent border-0">
+                        <a href="/dash/" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add War Analysis Card -->
+ 
+        
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card feature-card">
+                    <div class="card-header">
+                        <h2 class="text-center">About This Project</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>This dashboard serves as a comprehensive tool for visualizing and analyzing global humanitarian data, including refugee statistics, migration patterns, and modern slavery indicators. By presenting this information in an accessible format, we aim to increase awareness and understanding of these critical global issues.</p>
+                        <p>The data is sourced from respected international organizations including the United Nations High Commissioner for Refugees (UNHCR), World Bank, and the Global Slavery Index.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-muted">
+        <div class="container">
+            <p>Data sourced from Global Slavery Index, World Bank, and UNHCR</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
